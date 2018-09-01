@@ -1,11 +1,10 @@
 package com.example.jokelib;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 
-public class Joke {
+public final class Joke {
 
     public static final String JOKE_EXTRA = "joke";
     private static final List<String> jokes = Arrays.asList("What's the difference between ignorance and apathy?\nI don't know and I don't care.",
