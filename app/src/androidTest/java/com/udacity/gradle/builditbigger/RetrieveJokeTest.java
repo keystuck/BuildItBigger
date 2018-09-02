@@ -52,14 +52,14 @@ try {
  }
         
         ViewInteraction appCompatButton = onView(
-allOf(withText("Tell Joke"),
-childAtPosition(
-allOf(withId(R.id.fragment),
-childAtPosition(
-withId(android.R.id.content),
-0)),
-1),
-isDisplayed()));
+            allOf(withText("Tell Joke"),
+                childAtPosition(
+                    allOf(withId(R.id.fragment),
+                        childAtPosition(
+                            withId(android.R.id.content),
+                                0)),
+                        1),
+                    isDisplayed()));
         appCompatButton.perform(click());
         
          // Added a sleep statement to match the app's execution delay.
